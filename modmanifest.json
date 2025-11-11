@@ -1,0 +1,9 @@
+{
+  "UniqueModName": "NBKRedSpy_CommandAlly",
+  "Assemblies": [
+    "CommandAlly.dll"
+  ],
+  "Dependencies": [],
+  "SteamTags": [
+  ]
+}
