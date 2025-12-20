@@ -18,3 +18,10 @@ Thanks!
 [h1]Source Code[/h1]
 
 Source code is available on GitHub at https://github.com/NBKRedSpy/CommandAlly
+
+[h1]Change Log[/h1]
+
+[h2]1.0.1[/h2]
+[list]
+[*]Fix: Ally units the player did not control was incorrectly had their signal shown.
+[/list]
