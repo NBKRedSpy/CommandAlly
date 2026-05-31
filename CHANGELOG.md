@@ -4,4 +4,4 @@
 * Fix: Ally units the player did not control was incorrectly had their signal shown.
 
 # 1.0.2
-* Fix: A null clip would cause a NRE.
+* Beta Compatibility
