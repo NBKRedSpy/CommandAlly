@@ -96,7 +96,4 @@
 			<Private>False</Private>
 		</Reference>
 	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="OriginalIL\" />
-	</ItemGroup>
 </Project>

@@ -6,9 +6,6 @@ This is very helpful when using a unit as a mule as they can be left with a "sta
 
 This only affects units that can be normally commanded.  
 
-# Far Follow
-Currently commandable units can get stuck on doors when far away.  This is a limitation with the game.  If this occurs, move the merc closer until the unit can find a path.  Sometimes this is as close as visual distance.
-
 # Buy Me a Coffee
 If you enjoy my mods and want to buy me a coffee, check out my [Ko-Fi](https://ko-fi.com/nbkredspy71915) page.
 Thanks!
@@ -17,5 +14,4 @@ Thanks!
 Source code is available on GitHub at https://github.com/NBKRedSpy/CommandAlly
 
 # Change Log
-## 1.0.1
-* Fix: Ally units the player did not control was incorrectly had their signal shown.
+The change log can be found at https://github.com/NBKRedSpy/CommandAlly/blob/main/README.md

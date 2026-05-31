@@ -22,6 +22,8 @@ namespace CommandAlly
 
         public static State State = null;
 
+        public static bool IsBeta = false;
+
         [Hook(ModHookType.AfterConfigsLoaded)]
         public static void AfterConfig(IModContext context)
         {
@@ -31,6 +33,12 @@ namespace CommandAlly
             Directory.CreateDirectory(ConfigDirectories.ModPersistenceFolder);
 
             Config = ModConfig.LoadConfig(ConfigDirectories.ConfigPath);
+
+            IsBeta = Application.version.StartsWith("UNSTABLE BETA");
+
+            if (IsBeta) Logger.Log("Beta detected");
+
+
 
             new Harmony("NBKRedSpy_" + ConfigDirectories.ModAssemblyName).PatchAll();
         }
