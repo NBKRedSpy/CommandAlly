@@ -34,7 +34,8 @@ namespace CommandAlly
 
             Config = ModConfig.LoadConfig(ConfigDirectories.ConfigPath);
 
-            IsBeta = Application.version.StartsWith("UNSTABLE BETA");
+            //Currently Beta is 1.0 
+            IsBeta = Application.version.StartsWith("1.0");
 
             if (IsBeta) Logger.Log("Beta detected");
 
