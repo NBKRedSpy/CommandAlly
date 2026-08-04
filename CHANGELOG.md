@@ -1,5 +1,8 @@
 # Change Log
 
+# 1.0.4
+* Promoted beta to main
+
 # 1.0.3
 * Beta 1.0 compatibility
 

@@ -20,11 +20,11 @@ namespace CommandAlly
     public static class PlayerInteractionSystem_ProcessCmd_Patch
     {
 
-        public static bool Prepare()
-        {
-            //Currently only needed for the beta version as the clear queue is new
-            return Plugin.IsBeta;
-        }
+        //public static bool Prepare()
+        //{
+        //    //Currently only needed for the beta version as the clear queue is new
+        //    return Plugin.IsBeta;
+        //}
 
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {

@@ -17,4 +17,4 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/CommandAlly
 
 [h1]Change Log[/h1]
 
-The change log can be found at https://github.com/NBKRedSpy/CommandAlly/blob/main/README.md
+The change log can be found at https://github.com/NBKRedSpy/CommandAlly/blob/main/CHANGELOG.md

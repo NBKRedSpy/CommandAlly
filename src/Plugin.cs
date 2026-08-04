@@ -22,7 +22,7 @@ namespace CommandAlly
 
         public static State State = null;
 
-        public static bool IsBeta = false;
+        //public static bool IsBeta = false;
 
         [Hook(ModHookType.AfterConfigsLoaded)]
         public static void AfterConfig(IModContext context)
@@ -34,10 +34,10 @@ namespace CommandAlly
 
             Config = ModConfig.LoadConfig(ConfigDirectories.ConfigPath);
 
-            //Currently Beta is 1.0 
-            IsBeta = Application.version.StartsWith("1.0");
+            ////Currently Beta is 1.0 
+            //IsBeta = Application.version.StartsWith("1.0");
 
-            if (IsBeta) Logger.Log("Beta detected");
+            //if (IsBeta) Logger.Log("Beta detected");
 
 
 
