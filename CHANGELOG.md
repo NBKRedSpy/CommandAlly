@@ -1,5 +1,8 @@
 # Change Log
 
+# 1.0.5 
+* Support for 1.0.4.581s.2952480
+
 # 1.0.4
 * Promoted beta to main
 

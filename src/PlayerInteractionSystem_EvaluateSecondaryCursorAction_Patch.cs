@@ -31,7 +31,8 @@ namespace CommandAlly
                 .MatchEndForward(
                     new CodeMatch[]
                     {
-                        new CodeMatch(OpCodes.Callvirt, AccessTools.Method(typeof(Creatures), nameof(Creatures.GetMonster))),
+                        new CodeMatch(OpCodes.Callvirt, AccessTools.Method(typeof(Creatures), nameof(Creatures.GetMonster), 
+                            new Type[] {typeof(int), typeof(int)})),
                         new CodeMatch(OpCodes.Stloc_3),
                     })
                 .ThrowIfNotMatch("Did not find the GetMonster call")
