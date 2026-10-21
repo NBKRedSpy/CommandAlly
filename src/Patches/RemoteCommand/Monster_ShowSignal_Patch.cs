@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace CommandAlly
+namespace CommandAlly.Patches.RemoteCommand
 {
     [HarmonyPatch(typeof(Monster), nameof(Monster.ShowSignal), MethodType.Getter)]
     public static class Monster_ShowSignal_Patch

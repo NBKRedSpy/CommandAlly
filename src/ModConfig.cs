@@ -13,6 +13,8 @@ namespace CommandAlly
 {
     public class ModConfig
     {
+        public int FollowerBackpackAccessDistance { get; set; } = 2;
+
         public static ModConfig LoadConfig(string configPath)
         {
             ModConfig config;
