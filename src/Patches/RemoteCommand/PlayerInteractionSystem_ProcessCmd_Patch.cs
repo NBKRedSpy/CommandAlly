@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using static HarmonyLib.Code;
 
-namespace CommandAlly
+namespace CommandAlly.Patches.RemoteCommand
 {
     /// <summary>
     /// Changes the ProcessCmd to not clear the command queue if the target is an ally that 

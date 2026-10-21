@@ -7,7 +7,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using UnityEngine;
 
 namespace CommandAlly
 {
@@ -22,7 +21,7 @@ namespace CommandAlly
 
         public static State State = null;
 
-        //public static bool IsBeta = false;
+        private static McmConfiguration McmConfiguration = null;
 
         [Hook(ModHookType.AfterConfigsLoaded)]
         public static void AfterConfig(IModContext context)
@@ -30,19 +29,32 @@ namespace CommandAlly
 
             State = context.State;
 
+            Directory.CreateDirectory(ConfigDirectories.AllModsConfigFolder);
+            ConfigDirectories = new ConfigDirectories();
             Directory.CreateDirectory(ConfigDirectories.ModPersistenceFolder);
 
-            Config = ModConfig.LoadConfig(ConfigDirectories.ConfigPath);
+            Config = new ModConfig(ConfigDirectories.ConfigPath).LoadConfig();
 
-            ////Currently Beta is 1.0 
-            //IsBeta = Application.version.StartsWith("1.0");
-
-            //if (IsBeta) Logger.Log("Beta detected");
-
-
-
-            new Harmony("NBKRedSpy_" + ConfigDirectories.ModAssemblyName).PatchAll();
+            new Harmony("nbk_RedSpy_" + ConfigDirectories.ModAssemblyName).PatchAll();
         }
-     
+
+        /// <summary>
+        /// Configures MCM if it is available.
+        /// </summary>
+        /// <param name="modContext"></param>
+        [Hook(ModHookType.MainMenuStarted)]
+        public static void MainMenuStarted(ModContext modContext)
+        {
+            //Note - this is a workaround as the game does not support an "optional dependency"
+            //  and we cannot guarantee that MCM will be loaded before this mod.
+
+            //If MCM is not loaded, this will be run every time the main menu is started, but this is not 
+            //  an issue.
+            if (McmConfiguration != null) return;
+
+            McmConfiguration = McmConfiguration.TryConfigure(modContext.State, Config);
+
+        }
+
     }
 }

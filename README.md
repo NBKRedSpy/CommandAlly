@@ -1,10 +1,11 @@
 # Command Ally
 ![thumbnail icon](media/thumbnail.png)
 
-Allows the user to give commands to ally units that are not in line of site.  For example, robots, spiders, revived soldiers, etc.
-This is very helpful when using a unit as a mule as they can be left with a "stand" command and then recalled when you want to load them up.
+Command Ally adds two quality-of-life features for allied units:
 
-This only affects units that can be normally commanded.  
+- **Remote commands:** Give commands to normally commandable ally units when they are out of line of sight, including robots, spiders, and revived soldiers. This is useful for leaving a unit with a "stand" command as a mule and recalling it when you need to load it.
+
+- **Follower backpack access:** Open a follower ally's inventory from farther away. The access distance defaults to 2 tiles and can be adjusted in the mod configuration menu when Mod Config Menu is installed.
 
 # Buy Me a Coffee
 If you enjoy my mods and want to buy me a coffee, check out my [Ko-Fi](https://ko-fi.com/nbkredspy71915) page.

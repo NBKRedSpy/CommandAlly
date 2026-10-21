@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using static HarmonyLib.Code;
 
-namespace CommandAlly
+namespace CommandAlly.Patches.RemoteCommand
 {
     /// <summary>
     /// Adds the ability to use the context menu on allies that are spotted via signal (the *).
