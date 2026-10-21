@@ -6,7 +6,7 @@ Command Ally adds two quality-of-life features for allied units:
 [*]
 [b]Remote commands:[/b] Give commands to normally commandable ally units when they are out of line of sight, including robots, spiders, and revived soldiers. This is useful for leaving a unit with a "stand" command as a mule and recalling it when you need to load it.
 [*]
-[b]Follower backpack access:[/b] Open a follower ally's inventory from farther away. The access distance defaults to 2 tiles and can be adjusted in the mod configuration menu when Mod Config Menu is installed.
+[b]Follower backpack access:[/b] Ever had to fight getting one space away from your follower to open their inventory? Now you can open a follower ally's inventory from two cells away. This can be adjusted in the mod configuration menu when Mod Config Menu is installed.  The game's default is 1.
 [/list]
 
 [h1]Buy Me a Coffee[/h1]
