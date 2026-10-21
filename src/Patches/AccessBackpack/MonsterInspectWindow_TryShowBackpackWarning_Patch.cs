@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
+using UnityEngine;
 using UnityEngine.Rendering;
 
 namespace CommandAlly.Patches.AccessBackpack
@@ -61,8 +62,8 @@ namespace CommandAlly.Patches.AccessBackpack
         /// <returns></returns>
         private static bool IsNearby(ref CellPosition sourcePosition, CellPosition otherCellPosition)
         {
-            float distance = sourcePosition.Distance(otherCellPosition);
-            return distance != 0 && (int) distance <= Plugin.Config.FollowerBackpackAccessDistance;
+            int distance = Mathf.FloorToInt(sourcePosition.Distance(otherCellPosition));
+            return distance <= Plugin.Config.FollowerBackpackAccessDistance;
         }
     }
 }

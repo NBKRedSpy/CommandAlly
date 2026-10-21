@@ -74,11 +74,6 @@
 		<Copy SourceFiles="@(BuildSource)" DestinationFolder="$(WorkshopPath)" />
 	</Target>
 
-	<Target Name="ReleasePbdDelete" Condition="'$(SteamId)'!='' and '$(Configuration)'=='Release'" AfterTargets="PostBuildEvent">
-		<Delete Files="$(WorkshopPath)/$(TargetName).pdb" />
-	</Target>
-
-
 	<!-- Create the .Zip file release-->
 	<Target Condition="'$(SteamId)'!=''" AfterTargets="PostBuildEvent" Name="PostBuildPackage">
 		<ItemGroup>
